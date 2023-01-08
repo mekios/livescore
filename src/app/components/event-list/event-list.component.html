@@ -1,0 +1,5 @@
+<p>event-list works!</p>
+<div [style.padding.px]="20">
+    <app-event-component-shell *ngFor="let item of eventsList$ | async" [componentType]="item.eventType" [componentPayload]="item"> 
+    </app-event-component-shell>
+</div>
